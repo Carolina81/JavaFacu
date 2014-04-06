@@ -25,7 +25,7 @@ public class Ejercicio2 {
 	public static String getOracion(String separador){
 		String oracion = palabras[0] + separador;
 		for(int i = 1; i < 5; i++){ 
-			oracion = oracion + palabras[i] + separador;
+			oracion += palabras[i] + separador;
 		}
 		return oracion;
 	}
