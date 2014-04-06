@@ -12,7 +12,7 @@ public class Ejercicio1 {
 		System.out.println("Los nros menores al promedio son:");
 		int i = 0;
 		while(menores[i] != 0){
-			System.out.println(menores[i++]);
+			System.out.println("................................." + menores[i++]);
 		}
 	}
 
