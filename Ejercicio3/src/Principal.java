@@ -1,7 +1,7 @@
 
 
 public class Principal {
-	private static Articulo[] articulo = new Articulo[5];
+	private static Articulo articulo = new Articulo();
 	private static Cliente cliente = new Cliente();
 	private static Venta venta = new Venta();
 	private static String[] descripcion;
@@ -18,10 +18,10 @@ public class Principal {
 		dataBase();
 		
 		for (int i = 0; i < 5; i++) {
-			articulo[i].setId(i);
-			articulo[i].setDescripcion(descripcion[i]);
-			articulo[i].setPrecio(precio[i]);
-			articulo[i].setStock(stock[i]);
+			articulo.setId(i, i);
+			articulo.setDescripcion(descripcion[i], i);
+			articulo.setPrecio(precio[i], i);
+			articulo.setStock(stock[i], i);
 		}
 	}
 
@@ -38,9 +38,9 @@ public class Principal {
 		double total = 0.0;
 		
 		for (int i = a; i < b; i++) {
-			articulo[i].setStock(stock[i] - 1);
+			articulo.setStock((stock[i] - 1), i);
 			detalle.setCantidad(1);
-			total += articulo[i].getPrecio() * detalle.getCantidad();
+			total += articulo.getPrecio(i) * detalle.getCantidad();
 		}
 		detalle.setSubTotal(total);
 		venta.setTotalSinDto(total);
@@ -48,22 +48,25 @@ public class Principal {
 	
 	public static void imprimirFactura(int a, int b){
 		int nro = venta.getNroFactura() + 1;
-		System.out.println("Factura n°: " + nro + " - ID Factura #" + venta.getNroFactura());
-		System.out.println("Cliente: " + cliente.getRazonSocial());
+		System.out.println("Factura n°: " + nro + " - ID Factura #" + venta.getNroFactura() + "   Cliente: " + cliente.getRazonSocial());
+		System.out.println(" ");
 		System.out.println("Artículo      Cantidad     Precio Unitario     Total");
 		
 		for (int i = a; i < b; i++) {
 			String totalxArticulo; 
-			double aux = articulo[i].getPrecio() * detalle.getCantidad();
-			totalxArticulo = String.format("%2.f", aux);
-			System.out.println(articulo[i].getDescripcion() + "        " + detalle.getCantidad() + "             $" + articulo[i].getPrecio() + "            $" + totalxArticulo);
+			double aux = articulo.getPrecio(i) * detalle.getCantidad();
+			totalxArticulo = String.format("%.2f", aux);
+			System.out.println(articulo.getDescripcion(i) + "........" + detalle.getCantidad() + ".............$" + articulo.getPrecio(i) + "..........$" + totalxArticulo);
 		}
-		
-		System.out.println("Subtotal:                                    $" + detalle.getSubTotal());
-		System.out.println("Total (con descuento):                       $" + venta.getTotal());
+
+		System.out.println(" ");
+		System.out.println("Subtotal:......................................$" + detalle.getSubTotal());
+		System.out.println("Total (con descuento):.........................$" + venta.getTotal());
+		System.out.println(" ");
+		System.out.println("------------------------------------------------------");
+		System.out.println(" ");
 	}
-	
-	@SuppressWarnings("unused")
+
 	public static void crearFactura(int id){
 		venta.setNroFactura(id);
 		venta.setPorcentajeDescuento(10.0);
@@ -81,6 +84,6 @@ public class Principal {
 	public static void dataBase(){
 		descripcion = new String[]{"Artículo 1", "Artículo 2", "Artículo 3", "Artículo 4", "Artículo 5"};
 		stock = new int[]{5, 3, 7, 6, 2};
-		precio = new double[]{10.0, 15.5, 5.75, 80.0, 77.77};
+		precio = new double[]{10.00, 15.50, 05.75, 80.00, 77.5};
 	}
 }
