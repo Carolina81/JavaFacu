@@ -1,4 +1,3 @@
-
 public class Venta {
 	private int nroFactura;
 	private double porcentajeDescuento;
