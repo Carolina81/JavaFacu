@@ -1,4 +1,3 @@
-
 public class DetalleVenta {
 	private int[] cantidad = new int[5];
 	private double subTotal;
