@@ -1,4 +1,3 @@
-
 public class Articulo {
 	private int[] id = new int[5]; 
 	private int[] stock = new int[5];
