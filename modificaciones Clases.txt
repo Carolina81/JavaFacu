@@ -1,0 +1,14 @@
+CLASE DEVICE
+
+cambiar serial a String en la clase Device;
+
+CLASE PHONE
+
+cambiar number a String en la clase Phone;
+cambiar freeCallMinutes, freeInternet, usedCallMinutes, usedInternet a int en la clase Phone;
+
+CLASE OWNER
+
+cambiar el metodo getDevicesLighterThan() por setDevicesLighterThan()
+
+los métodos getDevices() y setDevicesLighterThan() manejarlos desde una clase principal, donde tambien se setean los valores de los articulos, y se inicializa un nuevo Owner.
