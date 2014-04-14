@@ -1,5 +1,3 @@
-package com.ejercicio5.herencia;
-
 public class Phone extends Device {
 	int freeSms, usedSms, freeCallMinutes, freeInternet, usedCallMinutes, usedInternet;
 	String number;
