@@ -1,5 +1,3 @@
-package com.ejercicio5.herencia;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
