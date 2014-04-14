@@ -1,5 +1,3 @@
-package com.ejercicio5.herencia;
-
 public class Desktop extends PC {
 	int box;
 	
