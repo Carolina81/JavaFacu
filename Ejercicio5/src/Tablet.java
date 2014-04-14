@@ -1,5 +1,3 @@
-package com.ejercicio5.herencia;
-
 public class Tablet extends Device {
 	String tactilTechnology, maxResolution, displaySize;
 	
