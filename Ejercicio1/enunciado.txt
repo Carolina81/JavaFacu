@@ -1,0 +1,17 @@
+1)	Crear una clase Ejercicio1, en la misma	crear una variable de instancia nros 
+	que sea un array de enteros	de 10 posiciones con su getter y setter.
+
+	Crear un método carga en la clase que use un for para cargar el array con
+	números crecientes de 3 en 3 desde 15 hasta llenar el array.
+	Luego en el mismo método recorrer el array y a los números pares dividirlos
+	por dos y reeplazarlos en el array.
+
+	Crear un método que devuelva la sumatoria de los números del array
+
+	Crear un método que devuelva el promedio de los números del array
+
+	Crear un método que devuelva un array con aquellos números del array 
+	que sean menores al promedio
+
+	Codificar el main para usar estos métodos y mostrar por pantalla la sumatoria,
+	el promedio y los números menores.
