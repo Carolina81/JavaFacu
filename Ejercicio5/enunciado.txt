@@ -1,0 +1,8 @@
+1) Crear las clases y métodos planteados en el diagrama de clases adjunto.
+El método Owner.getDevices() debe retornar un ArrayList con todos los devices
+El método Owner.getDevicesLighterThan(pesoMaximo) debe retornar los devices que
+pesen menos que pesoMaximo. Atención: No todos los dispositivos tienen peso registrado 
+
+Nota: Pueden crear más métodos, los indicados allí son los mínimos que deben crearse.
+
+2) Identificar posibles mejoras al modelo de clases y plantearlas en clase.
