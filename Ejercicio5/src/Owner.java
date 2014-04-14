@@ -1,6 +1,3 @@
-package com.ejercicio5.herencia;
-
-
 public class Owner {
 	int id;
 	String name, jobTitle;
