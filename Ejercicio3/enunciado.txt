@@ -1,0 +1,4 @@
+3)	Crear un proyecto con las clases definidas en el diagrama de clase en el directorio actual.
+	Crear un procedimiento que cree 1 cliente, 2 facturas para dicho cliente,
+	2 o 3 detalles cada uno con un articulo diferente.
+	Mostrar el total de las 2 facturas.
