@@ -1,5 +1,3 @@
-package com.ejercicio5.herencia;
-
 public class PC extends Device {
 	int cores, ramGB;
 	String OS;
