@@ -12,3 +12,7 @@ CLASE OWNER
 cambiar el metodo getDevicesLighterThan() por setDevicesLighterThan()
 
 los métodos getDevices() y setDevicesLighterThan() manejarlos desde una clase principal, donde tambien se setean los valores de los articulos, y se inicializa un nuevo Owner.
+
+VARIABLE WEIGHT
+
+la manejo desde la clase Device
