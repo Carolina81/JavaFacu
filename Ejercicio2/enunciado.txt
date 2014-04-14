@@ -1,0 +1,8 @@
+2)	Crear una clase Ejercicio2, en la misma crear una variable de instancia palabras
+	que sea un array de strings de 5 posiciones con su getter y setter.
+
+	Crear un método carga en la clase que cargue 5 palabras de su elección.
+
+	Crear un método GetOracion que reciba un parametro de tipo string llamado separador.
+	El mismo deberá devolver un string con la oración formada de concatenar las 5 palabras
+	del array con el separador que se pasó como parámetro.
