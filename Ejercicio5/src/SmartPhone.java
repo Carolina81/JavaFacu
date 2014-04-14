@@ -1,5 +1,3 @@
-package com.ejercicio5.herencia;
-
 public class SmartPhone extends Phone {
 	String tactilTechnology, maxResolution, displaySize;
 	
