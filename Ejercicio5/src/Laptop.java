@@ -1,5 +1,3 @@
-package com.ejercicio5.herencia;
-
 public class Laptop extends PC {
 	int ensuranceContract;
 	String ensuranceCompany, tactilTechnology, maxResolution, displaySize;
